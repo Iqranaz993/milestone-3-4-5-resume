@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Editable Resume builder</h1>
+    <form id="resumeform">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Resume URL</legend>
+                <input type="text" id="username" name="username" required><br>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="fname">Father's Name: </label>
+                <input type="fname" id="fname" name="fname" required><br><br>
+                <label for="Email">Email: </label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">phone: </label>
+                <input type="tel" id="phone" name="phone" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education: </label>
+            <textarea id="education" name="education" rows="4" required> </textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="Experience">Experience: </label>
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Skills: </label>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br><br>
+        </fieldset>
+        <button type="submit">Creat Resume</button>
+
+
+    </form>
+    <div id="resumeOutput">
+        <!-- resume will be generated -->
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
